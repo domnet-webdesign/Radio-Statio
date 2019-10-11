@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.btn {
+    text-decoration: none;
+    color: #0baea4;
+    font-weight: bolder;
+}
+
+.btn1 {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 1.1rem;
+    background: #0baea4;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.btn1:hover {
+    color: #0baea4;
+    background: #f8e8af;
+}
+
+body {
+    font-family: 'Lexend Mega', sans-serif;
+    overflow-x: hidden;
+    background: #ffff;
+}
+
+.social-icons {
+    background: #0baea4;
+    width: 100%; 
+    overflow: hidden;
+}
+
+.social-icons p {
+    float: left;
+    line-height: 3;
+    margin: 0 30px;
+    border: 1px solid red;
+    background: #d42922;
+    color: #fff;
+    font-weight: 800;
+    padding: 0 1rem;
+}
+
+.social-icons marquee {
+    position: absolute;
+    top: 1rem;
+    color: #ddd;
+    font-size: 1.1rem;
+}
+
+marquee .header-slide {
+    color: red;
+}
+
+#header .shift-left .icons i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#header {
+    border-bottom: 5px #d42922 solid;
+    background: #000;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+/* ----------------------nav-bar------------------------------- */
+
+#header .shift-left ul,
+#header .shift-left ul .icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+}
+
+#header .shift-left ul li a {
+    color: white;
+    font-size: 1rem;
+    line-height: 7;
+    text-decoration: none;
+    padding: 25px;
+}
+
+#header .shift-left ul li a:hover {
+    background: #b3a46f;
+    color: white;
+    border-radius: 20px;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+#header .shift-left ul .icons {
+    font-size: 1rem
+}
+
+/* menu */
+
+#header .menu i {
+    color: #0baea4;
+    position: absolute;
+    right: 2.3rem;
+    top: 88px;
+    font-size: 2.3rem;
+    display: none;
+
+}
+
+/* ----------------------------- LOGO ---------------------- */
+
+#header .centered-logo img {
+    border-radius: 50px;
+    padding: 5px;
+    position: relative;
+    left: 1.7rem;
+    margin-right: 10px;
+}
+
+/* ----------------------------NAV-RIGHT---------------------------- */
+
+/* Wrapper-banner */
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    'showcase showcase top-box-a top-box-b'
+    'showcase showcase top-box-c top-box-d';
+    margin: 30px;
+
+}
+
+
+.showcase {
+    grid-area: showcase;
+    min-height: 500px;
+    background: url('imgs/banner1.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.back-banner,
+.back-banner1 {
+    background: rgba(0,0,0,0.7);
+    color: #ddd;
+    height: 25%;
+    width: 100%;
+}
+
+
+.back-banner h5 {
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    margin: 0  1rem;
+    text-align: left;
+    
+}
+
+.back-banner h5 a,
+.back-banner1 h5 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.showcase .back-banner p {
+    padding-bottom: .5rem;
+    margin: 0 1rem;
+    text-align: left;
+}
+
+.top-box-a {
+    grid-area: top-box-a;
+    background: url('imgs/wole.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.top-box-b {
+    grid-area: top-box-b;
+    background: url('imgs/dogara.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.top-box-c {
+    grid-area: top-box-c;
+    background: url('imgs/Nasarawa-Flood2.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.top-box-d {
+    grid-area: top-box-d;
+    background: url('imgs/Xenophobia-Zambia5.jpg');
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.top-box-a h5,
+.top-box-b h5,
+.top-box-c h5,
+.top-box-d h5 {
+    padding: 1rem 0.6rem;
+    font-size: .9rem;
+}
+
+/* news */
+
+.news-heading .fn2,
+.sport-heading .fn2,
+.politics-heading .fn2 {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+    background: #0baea4;
+    width: 12rem;
+    text-align: center;
+    border-bottom: 6px solid #d42922;
+    
+
+}
+
+.news {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 50px 150px;
+}
+
+.news img,
+.politics img {
+    width: 100%;
+}
+
+.news-headlines1,
+.politics-headlines1 {
+    box-shadow: var(--shadow);
+    min-height: 60vh;
+    border-bottom-left-radius: .9rem;
+    border-bottom-right-radius: .9rem;
+}
+
+.news-headlines1 a,
+.politics-headlines1 a {
+    text-decoration: none;
+}
+
+.news-headlines1 h5,
+.politics-headlines1 h5 {
+    font-size: 1.2rem;
+    color: rgb(68, 66, 66);
+    padding: .8rem;
+} 
+
+.news-headlines1 p,
+.politics-headlines1 p {
+    color: #333;
+    padding: .8rem;
+    margin-bottom: 2.4rem;
+}
+
+/* Sport */
+
+.sport {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 50px 50px;
+}
+
+.sport-headlines1 .back-sport1{
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+}
+
+.back-sport1 a,
+.back-politics2 a {
+    text-decoration: none;
+    background: #fff;
+    height: 100%;
+    padding: 1.2rem;
+    width: 100%;
+    display: inline-block;
+}
+
+.back-sport1 a > img,
+.back-politics2 a > img {
+    float: left;
+    height: 8rem;
+    margin-right: 1.2rem;
+    width: 10rem;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+.caption {
+    background: 0;
+    bottom: auto;
+    height: 7.5rem;
+    position: relative;
+    padding: 0;
+    width: auto;
+}
+
+
+div {
+    display: block;
+}
+
+.caption .title,
+.caption1 .title1 {
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    top: -.4rem;
+    font-size: 1.3rem;
+    line-height: 1.384;
+    max-height: 5.5rem;
+    display: block;
+    white-space: normal;
+    color: #333;
+}
+
+.caption .sourcename,
+.caption1 .sourcename1 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.364;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    bottom: 0;
+    display: inline;
+    color: #666;
+    position: absolute;
+    max-width: 100%;
+}
+
+.caption .sourcename > img,
+.caption1 .sourcename1 > img {
+    margin-right: .4rem;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.sourcename img,
+.sourcename1 img {
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+/* politics section */
+
+.politics {
+    display: grid;
+    grid-gap: 30px;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    grid-template-areas: 
+    'politics-box-a politics-box-c politics-box-d politics-box-b'
+    'politics-box-a politics-box-e politics-box-f politics-box-b'
+    'politics-box-a politics-box-g politics-box-h politics-box-b';
+    margin: 50px 50px;
+}
+
+.politics-box-a {
+    grid-area: politics-box-a;
+
+} 
+
+.politics-box-b {
+    grid-area: politics-box-b;
+}
+
+.politics-box-c {
+    grid-area: politics-box-c;
+}
+
+.politics-box-d {
+    grid-area: politics-box-d;
+}
+
+.politics-box-e {
+    grid-area: politics-box-e;
+}
+
+.politics-box-f {
+    grid-area: politics-box-f;
+}
+
+.politics-box-g {
+    grid-area: politics-box-g;
+}
+
+.politics-box-h {
+    grid-area: politics-box-h;
+}
+
+.politics-headlines2 {
+    min-height: 2rem;
+    box-shadow: var(--shadow);
+}
+
+
+
+
+
+
+/* ------------------------------------------Media queries------------- */
+
+@media(max-width: 990px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #header .menu i {
+        display: block;
+    }
+
+    .wrapper {
+        grid-template-areas:
+        'showcase showcase' 
+        'showcase showcase'
+        'top-box-a top-box-b'
+        'top-box-c top-box-d';
+        
+    }
+
+    .top-box-a,
+    .top-box-b,
+    .top-box-c,
+    .top-box-d {
+        min-height: 250px;
+    }
+
+    /* news */
+    .news {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        margin: 50px;
+    }
+
+    /* Politics */
+    .politics {
+        display: grid;
+        grid-gap: 30px;
+        /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+        grid-template-areas: 
+        'politics-box-a politics-box-a'
+        'politics-box-a politics-box-a'
+        'politics-box-a politics-box-a'
+        'politics-box-c politics-box-c'
+        'politics-box-d politics-box-d'
+        'politics-box-e politics-box-e'
+        'politics-box-f politics-box-f'
+        'politics-box-g politics-box-g'
+        'politics-box-h politics-box-h'
+        'politics-box-b politics-box-b'
+        'politics-box-b politics-box-b'
+        'politics-box-b politics-box-b';
+        margin: 50px 50px;
+    }
+    
+
+} 
+
+@media(max-width: 1024px) {
+
+    .news {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        margin: 50px;
+    }
+
+    #header .menu i {
+        display: block;
+    }
+
+    .sport {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        margin: 30px 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px) {
+
+    .wrapper {
+        grid-template-areas:
+        'showcase'
+        'top-box-a'
+        'top-box-b'
+        'top-box-c'
+        'top-box-d';
+        
+    }
+
+    .politics {
+
+        /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+        grid-template-areas: 
+        'politics-box-a'
+        'politics-box-c'
+        'politics-box-d'
+        'politics-box-e'
+        'politics-box-f'
+        'politics-box-g'
+        'politics-box-h'
+        'politics-box-b';
+    }
+}
+
+@media(min-width: 990px) {
+
+    /* .politics {
+
+        grid-template-areas: 
+        'politics-box-a politics-box-a politics-box-c'
+        'politics-box-a politics-box-a politics-box-d'
+        'politics-box-a politics-box-a politics-box-e'
+        'politics-box-b politics-box-b politics-box-f'
+        'politics-box-b politics-box-b politics-box-g'
+        'politics-box-b politics-box-b politics-box-h';
+    }
+
+    .politics-headlines1 {
+        min-width: 20rem;
+    }
+    
+    .politics-headlines2 {
+        
+        box-shadow: var(--shadow);
+    } */
+}
